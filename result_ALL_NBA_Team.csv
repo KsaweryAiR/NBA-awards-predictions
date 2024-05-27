@@ -1,0 +1,361 @@
+YEAR,Result,Position,PLAYER_NAME,Team
+2000,First Team,F,Tim Duncan,San Antonio Spurs
+2000,First Team,F,Chris Webber,Sacramento Kings
+2000,First Team,C,Shaquille O’Neal,Los Angeles Lakers
+2000,First Team,G,Allen Iverson,Philadelphia 76ers
+2000,First Team,G,Jason Kidd,Phoenix Suns
+2000,Second Team,F,Kevin Garnett,Minnesota Timberwolves
+2000,Second Team,F,Vince Carter,Toronto Raptors
+2000,Second Team,C,Dikembe Mutombo,Atlanta Hawks/Philadelphia 76ers
+2000,Second Team,G,Kobe Bryant,Los Angeles Lakers
+2000,Second Team,G,Tracy McGrady,Orlando Magic
+2000,Third Team,F,Karl Malone,Utah Jazz
+2000,Third Team,F,Dirk Nowitzki,Dallas Mavericks
+2000,Third Team,C,David Robinson,San Antonio Spurs
+2000,Third Team,G,Ray Allen,Milwaukee Bucks
+2000,Third Team,G,Gary Payton,Seattle SuperSonics
+2001,First Team,F,Tim Duncan,San Antonio Spurs
+2001,First Team,F,Chris Webber,Sacramento Kings
+2001,First Team,C,Shaquille O’Neal,Los Angeles Lakers
+2001,First Team,G,Allen Iverson,Philadelphia 76ers
+2001,First Team,G,Jason Kidd,Phoenix Suns
+2001,Second Team,F,Kevin Garnett,Minnesota Timberwolves
+2001,Second Team,F,Chris Webber,Sacramento Kings
+2001,Second Team,C,Dirk Nowitzki,Dallas Mavericks
+2001,Second Team,G,Allen Iverson,Philadelphia 76ers
+2001,Second Team,G,Gary Payton,Seattle SuperSonics
+2001,Third Team,F,Jermaine O’Neal,Indiana Pacers
+2001,Third Team,F,Ben Wallace,Detroit Pistons
+2001,Third Team,C,Dikembe Mutombo,Philadelphia 76ers
+2001,Third Team,G,Steve Nash,Dallas Mavericks
+2001,Third Team,G,Paul Pierce,Boston Celtics
+2002,First Team,F,Tim Duncan,San Antonio Spurs
+2002,First Team,F,Kevin Garnett,Minnesota Timberwolves
+2002,First Team,C,Shaquille O’Neal,Los Angeles Lakers
+2002,First Team,G,Kobe Bryant,Los Angeles Lakers
+2002,First Team,G,Tracy McGrady,Orlando Magic
+2002,Second Team,F,Dirk Nowitzki,Dallas Mavericks
+2002,Second Team,F,Chris Webber,Sacramento Kings
+2002,Second Team,C,Ben Wallace,Detroit Pistons
+2002,Second Team,G,Allen Iverson,Philadelphia 76ers
+2002,Second Team,G,Jason Kidd,New Jersey Nets
+2002,Third Team,F,Jamal Mashburn,New Orleans Hornets
+2002,Third Team,F,Paul Pierce,Boston Celtics
+2002,Third Team,C,Jermaine O’Neal,Indiana Pacers
+2002,Third Team,G,Stephon Marbury,Phoenix Suns
+2002,Third Team,G,Steve Nash,Dallas Mavericks
+2003,First Team,F,Tim Duncan,San Antonio Spurs
+2003,First Team,F,Kevin Garnett,Minnesota Timberwolves
+2003,First Team,C,Shaquille O’Neal,Los Angeles Lakers
+2003,First Team,G,Kobe Bryant,Los Angeles Lakers
+2003,First Team,G,Jason Kidd,New Jersey Nets
+2003,Second Team,F,Tracy McGrady,Orlando Magic
+2003,Second Team,F,Peja Stojakovic,Sacramento Kings
+2003,Second Team,F,Jermaine O’Neal,Indiana Pacers
+2003,Second Team,C,Ben Wallace,Detroit Pistons
+2003,Second Team,G,Sam Cassell,Minnesota Timberwolves
+2003,Third Team,F,Ron Artest,Indiana Pacers
+2003,Third Team,F,Dirk Nowitzki,Dallas Mavericks
+2003,Third Team,C,Yao Ming,Houston Rockets
+2003,Third Team,G,Baron Davis,New Orleans Hornets
+2003,Third Team,G,Michael Redd,Milwaukee Bucks
+2004,First Team,F,Tim Duncan,San Antonio Spurs
+2004,First Team,F,Dirk Nowitzki,Dallas Mavericks
+2004,First Team,C,Shaquille O’Neal,Miami Heat
+2004,First Team,G,Allen Iverson,Philadelphia 76ers
+2004,First Team,G,Steve Nash,Phoenix Suns
+2004,Second Team,F,Kevin Garnett,Minnesota Timberwolves
+2004,Second Team,F,LeBron James,Cleveland Cavaliers
+2004,Second Team,C,Amar’e Stoudemire,Phoenix Suns
+2004,Second Team,G,Ray Allen,Seattle SuperSonics
+2004,Second Team,G,Dwyane Wade,Miami Heat
+2004,Third Team,F,Shawn Marion,Phoenix Suns
+2004,Third Team,F,Tracy McGrady,Houston Rockets
+2004,Third Team,C,Ben Wallace,Detroit Pistons
+2004,Third Team,G,Gilbert Arenas,Washington Wizards
+2004,Third Team,G,Kobe Bryant,Los Angeles Lakers
+2005,First Team,F,LeBron James,Cleveland Cavaliers
+2005,First Team,F,Dirk Nowitzki,Dallas Mavericks
+2005,First Team,C,Shaquille O’Neal,Miami Heat
+2005,First Team,G,Kobe Bryant,Los Angeles Lakers
+2005,First Team,G,Steve Nash,Phoenix Suns
+2005,Second Team,F,Elton Brand,LA Clippers
+2005,Second Team,F,Tim Duncan,San Antonio Spurs
+2005,Second Team,C,Ben Wallace,Detroit Pistons
+2005,Second Team,G,Chauncey Billups,Detroit Pistons
+2005,Second Team,G,Dwyane Wade,Miami Heat
+2005,Third Team,F,Carmelo Anthony,Denver Nuggets
+2005,Third Team,F,Shawn Marion,Phoenix Suns
+2005,Third Team,C,Yao Ming,Houston Rockets
+2005,Third Team,G,Gilbert Arenas,Washington Wizards
+2005,Third Team,G,Allen Iverson,Philadelphia 76ers
+2006,First Team,F,Tim Duncan,San Antonio Spurs
+2006,First Team,F,Dirk Nowitzki,Dallas Mavericks
+2006,First Team,C,Amar’e Stoudemire,Phoenix Suns
+2006,First Team,G,Kobe Bryant,Los Angeles Lakers
+2006,First Team,G,Steve Nash,Phoenix Suns
+2006,Second Team,F,Chris Bosh,Toronto Raptors
+2006,Second Team,F,LeBron James,Cleveland Cavaliers
+2006,Second Team,C,Yao Ming,Houston Rockets
+2006,Second Team,G,Gilbert Arenas,Washington Wizards
+2006,Second Team,G,Tracy McGrady,Houston Rockets
+2006,Third Team,F,Carmelo Anthony,Denver Nuggets
+2006,Third Team,F,Kevin Garnett,Minnesota Timberwolves
+2006,Third Team,C,Dwight Howard,Orlando Magic
+2006,Third Team,G,Chauncey Billups,Detroit Pistons
+2006,Third Team,G,Dwyane Wade,Miami Heat
+2007,First Team,F,Kevin Garnett,Boston Celtics
+2007,First Team,F,LeBron James,Cleveland Cavaliers
+2007,First Team,C,Dwight Howard,Orlando Magic
+2007,First Team,G,Kobe Bryant,Los Angeles Lakers
+2007,First Team,G,Chris Paul,New Orleans Hornets
+2007,Second Team,F,Tim Duncan,San Antonio Spurs
+2007,Second Team,F,Dirk Nowitzki,Dallas Mavericks
+2007,Second Team,C,Amar’e Stoudemire,Phoenix Suns
+2007,Second Team,G,Steve Nash,Phoenix Suns
+2007,Second Team,G,Deron Williams,Utah Jazz
+2007,Third Team,F,Carlos Boozer,Utah Jazz
+2007,Third Team,F,Paul Pierce,Boston Celtics
+2007,Third Team,C,Yao Ming,Houston Rockets
+2007,Third Team,G,Manu Ginobili,San Antonio Spurs
+2007,Third Team,G,Tracy McGrady,Houston Rockets
+2008,First Team,F,Dirk Nowitzki,Dallas Mavericks
+2008,First Team,F,LeBron James,Cleveland Cavaliers
+2008,First Team,C,Dwight Howard,Orlando Magic
+2008,First Team,G,Kobe Bryant,Los Angeles Lakers
+2008,First Team,G,Dwyane Wade,Miami Heat
+2008,Second Team,F,Tim Duncan,San Antonio Spurs
+2008,Second Team,F,Paul Pierce,Boston Celtics
+2008,Second Team,C,Yao Ming,Houston Rockets
+2008,Second Team,G,Chris Paul,New Orleans Hornets
+2008,Second Team,G,Brandon Roy,Portland Trail Blazers
+2008,Third Team,F,Carmelo Anthony,Denver Nuggets
+2008,Third Team,F,Pau Gasol,Los Angeles Lakers
+2008,Third Team,C,Shaquille O’Neal,Phoenix Suns
+2008,Third Team,G,Chauncey Billups,Detroit Pistons
+2008,Third Team,G,Tony Parker,San Antonio Spurs
+2009,First Team,F,Kevin Durant,Oklahoma City Thunder
+2009,First Team,F,LeBron James,Cleveland Cavaliers
+2009,First Team,C,Dwight Howard,Orlando Magic
+2009,First Team,G,Kobe Bryant,Los Angeles Lakers
+2009,First Team,G,Dwyane Wade,Miami Heat
+2009,Second Team,F,Carmelo Anthony,Denver Nuggets
+2009,Second Team,F,Dirk Nowitzki,Dallas Mavericks
+2009,Second Team,C,Amar’e Stoudemire,Phoenix Suns
+2009,Second Team,G,Steve Nash,Phoenix Suns
+2009,Second Team,G,Deron Williams,Utah Jazz
+2009,Third Team,F,Tim Duncan,San Antonio Spurs
+2009,Third Team,F,Pau Gasol,Los Angeles Lakers
+2009,Third Team,C,Andrew Bogut,Milwaukee Bucks
+2009,Third Team,G,Joe Johnson,Atlanta Hawks
+2009,Third Team,G,Brandon Roy,Portland Trail Blazers
+2010,First Team,F,Kevin Durant,Oklahoma City Thunder
+2010,First Team,F,LeBron James,Miami Heat
+2010,First Team,C,Dwight Howard,Orlando Magic
+2010,First Team,G,Kobe Bryant,Los Angeles Lakers
+2010,First Team,G,Derrick Rose,Chicago Bulls
+2010,Second Team,F,Pau Gasol,Los Angeles Lakers
+2010,Second Team,F,Dirk Nowitzki,Dallas Mavericks
+2010,Second Team,C,Amar’e Stoudemire,New York Knicks
+2010,Second Team,G,Dwyane Wade,Miami Heat
+2010,Second Team,G,Russell Westbrook,Oklahoma City Thunder
+2010,Third Team,F,LaMarcus Aldridge,Portland Trail Blazers
+2010,Third Team,F,Zach Randolph,Memphis Grizzlies
+2010,Third Team,C,Al Horford,Atlanta Hawks
+2010,Third Team,G,Manu Ginobili,San Antonio Spurs
+2010,Third Team,G,Chris Paul,New Orleans Hornets
+2011,First Team,F,Kevin Durant,Oklahoma City Thunder
+2011,First Team,F,LeBron James,Miami Heat
+2011,First Team,C,Dwight Howard,Orlando Magic
+2011,First Team,G,Kobe Bryant,Los Angeles Lakers
+2011,First Team,G,Chris Paul,LA Clippers
+2011,Second Team,F,Kevin Love,Minnesota Timberwolves
+2011,Second Team,F,Blake Griffin,LA Clippers
+2011,Second Team,C,Andrew Bynum,Los Angeles Lakers
+2011,Second Team,G,Tony Parker,San Antonio Spurs
+2011,Second Team,G,Russell Westbrook,Oklahoma City Thunder
+2011,Third Team,F,Carmelo Anthony,New York Knicks
+2011,Third Team,F,Dirk Nowitzki,Dallas Mavericks
+2011,Third Team,C,Tyson Chandler,New York Knicks
+2011,Third Team,G,Dwyane Wade,Miami Heat
+2011,Third Team,G,Rajon Rondo,Boston Celtics
+2012,First Team,F,LeBron James,Miami Heat
+2012,First Team,F,Kevin Durant,Oklahoma City Thunder
+2012,First Team,C,Tim Duncan,San Antonio Spurs
+2012,First Team,G,Kobe Bryant,Los Angeles Lakers
+2012,First Team,G,Chris Paul,LA Clippers
+2012,Second Team,F,Carmelo Anthony,New York Knicks
+2012,Second Team,F,Blake Griffin,LA Clippers
+2012,Second Team,C,Marc Gasol,Memphis Grizzlies
+2012,Second Team,G,Tony Parker,San Antonio Spurs
+2012,Second Team,G,Russell Westbrook,Oklahoma City Thunder
+2012,Third Team,F,David Lee,Golden State Warriors
+2012,Third Team,F,Paul George,Indiana Pacers
+2012,Third Team,C,Dwight Howard,Los Angeles Lakers
+2012,Third Team,G,Dwyane Wade,Miami Heat
+2012,Third Team,G,James Harden,Houston Rockets
+2013,First Team,F,LeBron James,Miami Heat
+2013,First Team,F,Kevin Durant,Oklahoma City Thunder
+2013,First Team,C,Tim Duncan,San Antonio Spurs
+2013,First Team,G,Kobe Bryant,Los Angeles Lakers
+2013,First Team,G,Chris Paul,LA Clippers
+2013,Second Team,F,Carmelo Anthony,New York Knicks
+2013,Second Team,F,Blake Griffin,LA Clippers
+2013,Second Team,C,Marc Gasol,Memphis Grizzlies
+2013,Second Team,G,Tony Parker,San Antonio Spurs
+2013,Second Team,G,Russell Westbrook,Oklahoma City Thunder
+2013,Third Team,F,David Lee,Golden State Warriors
+2013,Third Team,F,Paul George,Indiana Pacers
+2013,Third Team,C,Dwight Howard,Los Angeles Lakers
+2013,Third Team,G,Dwyane Wade,Miami Heat
+2013,Third Team,G,James Harden,Houston Rockets
+2014,First Team,F,LeBron James,Cleveland Cavaliers
+2014,First Team,F,Anthony Davis,New Orleans Pelicans
+2014,First Team,C,Marc Gasol,Memphis Grizzlies
+2014,First Team,G,Stephen Curry,Golden State Warriors
+2014,First Team,G,James Harden,Houston Rockets
+2014,Second Team,F,LaMarcus Aldridge,Portland Trail Blazers
+2014,Second Team,F,DeMarcus Cousins,Sacramento Kings
+2014,Second Team,C,Pau Gasol,Chicago Bulls
+2014,Second Team,G,Russell Westbrook,Oklahoma City Thunder
+2014,Second Team,G,Chris Paul,LA Clippers
+2014,Third Team,F,Blake Griffin,LA Clippers
+2014,Third Team,F,Tim Duncan,San Antonio Spurs
+2014,Third Team,C,DeAndre Jordan,LA Clippers
+2014,Third Team,G,Klay Thompson,Golden State Warriors
+2014,Third Team,G,Kyrie Irving,Cleveland Cavaliers
+2015,First Team,F,LeBron James,Cleveland Cavaliers
+2015,First Team,F,Anthony Davis,New Orleans Pelicans
+2015,First Team,C,Marc Gasol,Memphis Grizzlies
+2015,First Team,G,Stephen Curry,Golden State Warriors
+2015,First Team,G,James Harden,Houston Rockets
+2015,Second Team,F,LaMarcus Aldridge,Portland Trail Blazers
+2015,Second Team,F,DeMarcus Cousins,Sacramento Kings
+2015,Second Team,C,Pau Gasol,Chicago Bulls
+2015,Second Team,G,Russell Westbrook,Oklahoma City Thunder
+2015,Second Team,G,Chris Paul,LA Clippers
+2015,Third Team,F,Blake Griffin,LA Clippers
+2015,Third Team,F,Tim Duncan,San Antonio Spurs
+2015,Third Team,C,DeAndre Jordan,LA Clippers
+2015,Third Team,G,Klay Thompson,Golden State Warriors
+2015,Third Team,G,Kyrie Irving,Cleveland Cavaliers
+2016,First Team,F,LeBron James,Cleveland Cavaliers
+2016,First Team,F,Anthony Davis,New Orleans Pelicans
+2016,First Team,C,Marc Gasol,Memphis Grizzlies
+2016,First Team,G,Stephen Curry,Golden State Warriors
+2016,First Team,G,James Harden,Houston Rockets
+2016,Second Team,F,LaMarcus Aldridge,Portland Trail Blazers
+2016,Second Team,F,DeMarcus Cousins,Sacramento Kings
+2016,Second Team,C,Pau Gasol,Chicago Bulls
+2016,Second Team,G,Russell Westbrook,Oklahoma City Thunder
+2016,Second Team,G,Chris Paul,LA Clippers
+2016,Third Team,F,Blake Griffin,LA Clippers
+2016,Third Team,F,Tim Duncan,San Antonio Spurs
+2016,Third Team,C,DeAndre Jordan,LA Clippers
+2016,Third Team,G,Klay Thompson,Golden State Warriors
+2016,Third Team,G,Kyrie Irving,Cleveland Cavaliers
+2017,First Team,F,LeBron James,Cleveland Cavaliers
+2017,First Team,F,Anthony Davis,New Orleans Pelicans
+2017,First Team,C,Marc Gasol,Memphis Grizzlies
+2017,First Team,G,Stephen Curry,Golden State Warriors
+2017,First Team,G,James Harden,Houston Rockets
+2017,Second Team,F,LaMarcus Aldridge,Portland Trail Blazers
+2017,Second Team,F,DeMarcus Cousins,Sacramento Kings
+2017,Second Team,C,Pau Gasol,Chicago Bulls
+2017,Second Team,G,Russell Westbrook,Oklahoma City Thunder
+2017,Second Team,G,Chris Paul,LA Clippers
+2017,Third Team,F,Blake Griffin,LA Clippers
+2017,Third Team,F,Tim Duncan,San Antonio Spurs
+2017,Third Team,C,DeAndre Jordan,LA Clippers
+2017,Third Team,G,Klay Thompson,Golden State Warriors
+2017,Third Team,G,Kyrie Irving,Cleveland Cavaliers
+2018,First Team,F,LeBron James,Cleveland Cavaliers
+2018,First Team,F,Anthony Davis,New Orleans Pelicans
+2018,First Team,C,Marc Gasol,Memphis Grizzlies
+2018,First Team,G,Stephen Curry,Golden State Warriors
+2018,First Team,G,James Harden,Houston Rockets
+2018,Second Team,F,LaMarcus Aldridge,Portland Trail Blazers
+2018,Second Team,F,DeMarcus Cousins,Sacramento Kings
+2018,Second Team,C,Pau Gasol,Chicago Bulls
+2018,Second Team,G,Russell Westbrook,Oklahoma City Thunder
+2018,Second Team,G,Chris Paul,LA Clippers
+2018,Third Team,F,Blake Griffin,LA Clippers
+2018,Third Team,F,Tim Duncan,San Antonio Spurs
+2018,Third Team,C,DeAndre Jordan,LA Clippers
+2018,Third Team,G,Klay Thompson,Golden State Warriors
+2018,Third Team,G,Kyrie Irving,Cleveland Cavaliers
+2019,First Team,F,Giannis Antetokounmpo,Milwaukee Bucks
+2019,First Team,F,Kawhi Leonard,LA Clippers
+2019,First Team,C,Nikola Jokic,Denver Nuggets
+2019,First Team,G,Stephen Curry,Golden State Warriors
+2019,First Team,G,Luka Doncic,Dallas Mavericks
+2019,Second Team,F,Julius Randle,New York Knicks
+2019,Second Team,F,LeBron James,Los Angeles Lakers
+2019,Second Team,C,Joel Embiid,Philadelphia 76ers
+2019,Second Team,G,Chris Paul,Phoenix Suns
+2019,Second Team,G,Damian Lillard,Portland Trail Blazers
+2019,Third Team,F,Jimmy Butler,Miami Heat
+2019,Third Team,F,Paul George,LA Clippers
+2019,Third Team,C,Rudy Gobert,Utah Jazz
+2019,Third Team,G,Bradley Beal,Washington Wizards
+2019,Third Team,G,Kyrie Irving,Brooklyn Nets
+2020,First Team,F,Giannis Antetokounmpo,Milwaukee Bucks
+2020,First Team,F,LeBron James,Los Angeles Lakers
+2020,First Team,C,Anthony Davis,Los Angeles Lakers
+2020,First Team,G,James Harden,Houston Rockets
+2020,First Team,G,Luka Doncic,Dallas Mavericks
+2020,Second Team,F,Kawhi Leonard,LA Clippers
+2020,Second Team,F,Pascal Siakam,Toronto Raptors
+2020,Second Team,C,Nikola Jokic,Denver Nuggets
+2020,Second Team,G,Damian Lillard,Portland Trail Blazers
+2020,Second Team,G,Chris Paul,Oklahoma City Thunder
+2020,Third Team,F,Jayson Tatum,Boston Celtics
+2020,Third Team,F,Jimmy Butler,Miami Heat
+2020,Third Team,C,Rudy Gobert,Utah Jazz
+2020,Third Team,G,Ben Simmons,Philadelphia 76ers
+2020,Third Team,G,Russell Westbrook,Houston Rockets
+2021,First Team,F,Giannis Antetokounmpo,Milwaukee Bucks
+2021,First Team,F,Kawhi Leonard,LA Clippers
+2021,First Team,C,Nikola Jokic,Denver Nuggets
+2021,First Team,G,Stephen Curry,Golden State Warriors
+2021,First Team,G,Luka Doncic,Dallas Mavericks
+2021,Second Team,F,Julius Randle,New York Knicks
+2021,Second Team,F,LeBron James,Los Angeles Lakers
+2021,Second Team,C,Joel Embiid,Philadelphia 76ers
+2021,Second Team,G,Chris Paul,Phoenix Suns
+2021,Second Team,G,Damian Lillard,Portland Trail Blazers
+2021,Third Team,F,Jimmy Butler,Miami Heat
+2021,Third Team,F,Paul George,LA Clippers
+2021,Third Team,C,Rudy Gobert,Utah Jazz
+2021,Third Team,G,Bradley Beal,Washington Wizards
+2021,Third Team,G,Kyrie Irving,Brooklyn Nets
+2022,First Team,F,Giannis Antetokounmpo,Milwaukee Bucks
+2022,First Team,F,Jayson Tatum,Boston Celtics
+2022,First Team,C,Joel Embiid,Philadelphia 76ers
+2022,First Team,G,Shai Gilgeous-Alexander,Oklahoma City Thunder
+2022,First Team,G,Luka Doncic,Dallas Mavericks
+2022,Second Team,F,Jimmy Butler,Miami Heat
+2022,Second Team,F,Jaylen Brown,Boston Celtics
+2022,Second Team,C,Nikola Jokic,Denver Nuggets
+2022,Second Team,G,Donovan Mitchell,Cleveland Cavaliers
+2022,Second Team,G,Stephen Curry,Golden State Warriors
+2022,Third Team,F,Julius Randle,New York Knicks
+2022,Third Team,F,LeBron James,Los Angeles Lakers
+2022,Third Team,C,Domantas Sabonis,Sacramento Kings
+2022,Third Team,G,De’Aaron Fox,Sacramento Kings
+2022,Third Team,G,Damian Lillard,Portland Trail Blazers
+2023,First Team,F,Giannis Antetokounmpo,Milwaukee Bucks
+2023,First Team,F,Jayson Tatum,Boston Celtics
+2023,First Team,C,Nikola Jokic,Denver Nuggets
+2023,First Team,G,Shai Gilgeous-Alexander,Oklahoma City Thunder
+2023,First Team,G,Luka Doncic,Dallas Mavericks
+2023,Second Team,F,Kawhi Leonard,LA Clippers
+2023,Second Team,F,Kevin Durant,Phoenix Suns
+2023,Second Team,C,Anthony Davis,Los Angeles Lakers
+2023,Second Team,G,Anthony Edwards,Minnesota Timberwolves
+2023,Second Team,G,Jalen Brunson,New York Knicks
+2023,Third Team,F,LeBron James,Los Angeles Lakers
+2023,Third Team,C,Domantas Sabonis,Sacramento Kings
+2023,Third Team,G,Tyrese Haliburton,Indiana Pacers
+2023,Third Team,G,Devin Booker,Phoenix Suns
+2023,Third Team,G,Stephen Curry,Golden State Warriors
