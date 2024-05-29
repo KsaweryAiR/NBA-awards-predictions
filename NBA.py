@@ -3,10 +3,7 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
-from sklearn.svm import SVC
 from sklearn.neural_network import MLPClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.naive_bayes import GaussianNB
 import json
 
 
@@ -140,7 +137,10 @@ def make_collection(data, year, target, features):
 
 
 def All_NBA_TEAM(stats_players, result_data, year):
-    merged_data = pd.merge(stats_players, result_data[['PLAYER_NAME', 'YEAR', 'Result']], on=['PLAYER_NAME', 'YEAR'],
+
+    mask = stats_players['YEAR'] == stats_players.groupby('PLAYER_NAME')['YEAR'].transform('min')
+    filtered_data = stats_players[~mask]
+    merged_data = pd.merge(filtered_data, result_data[['PLAYER_NAME', 'YEAR', 'Result']], on=['PLAYER_NAME', 'YEAR'],
                            how='left')
 
     merged_data = merged_data.replace({'Result': {'First Team': 3, 'Second Team': 2, 'Third Team': 1}})
@@ -160,8 +160,10 @@ def All_NBA_TEAM(stats_players, result_data, year):
     filtered_stats_C = filter_C_position(filter_data)
     filtered_stats_G = filter_G_position(filter_data)
 
-    features_F = corrlation_cal(filtered_stats_F, features, year, 0.3)
-    features_C = corrlation_cal(filtered_stats_C, features, year, 0.25)
+    features_F = corrlation_cal(filtered_stats_F, features, year, 0.22)
+
+    features_C = corrlation_cal(filtered_stats_C, features, year, 0.28)
+
     features_G = corrlation_cal(filtered_stats_G, features, year, 0.1)
 
 
@@ -191,12 +193,6 @@ def All_NBA_TEAM(stats_players, result_data, year):
     second_ALLteam = list(filtered_second_team.keys())[:5]
     third_ALLteam = list(filtered_third_team.keys())[:5]
 
-    print("FIRST ALL TEAM")
-    print(first_ALLteam)
-    print("SCOND ALL TEAM")
-    print(second_ALLteam)
-    print("THIRD ALL TEAM")
-    print(third_ALLteam)
 
     return first_ALLteam, second_ALLteam, third_ALLteam
 
@@ -204,8 +200,9 @@ def All_NBA_TEAM(stats_players, result_data, year):
 def All_NBA_ROOKIE_TEAM(stats_players, result_data, year):
     stats_players.sort_values(by=['PLAYER_NAME', 'YEAR'], inplace=True)
     mask = stats_players['YEAR'] == stats_players.groupby('PLAYER_NAME')['YEAR'].transform('min')
-
     filtered_data = stats_players[mask]
+
+    filtered_data = filtered_data[filtered_data['YEAR'] != filtered_data['YEAR'].min()].copy()
     filtered_data.reset_index(drop=True, inplace=True)
 
     merged_data = pd.merge(filtered_data, result_data[['PLAYER_NAME', 'YEAR', 'Result']], on=['PLAYER_NAME', 'YEAR'],
@@ -220,27 +217,21 @@ def All_NBA_ROOKIE_TEAM(stats_players, result_data, year):
                 'PLUS_MINUS', 'NBA_FANTASY_PTS', 'DD2', 'TD3', 'WNBA_FANTASY_PTS', 'FG_PCT', 'FG3_PCT', 'FT_PCT']
     target = 'Result'
 
-    featuresOPT = corrlation_cal(merged_data, features, year, 0.35)
+    featuresOPT = corrlation_cal(merged_data, features, year, 0.4)
 
     BIG_DATA = make_collection(merged_data, year, target, featuresOPT)  # X_trainF, y_trainF, X_testF, y_testF, player_dataF
     BIG_DATA = [BIG_DATA]
     models = [
-        KNeighborsClassifier(n_neighbors=20, weights="uniform"),
-        DecisionTreeClassifier(random_state=42),
-        AdaBoostClassifier(random_state=42, n_estimators=50),
-        SVC(kernel='linear'),
-        GaussianNB()
+        KNeighborsClassifier(n_neighbors=8, weights="uniform"),
+        LogisticRegression(solver='liblinear'),
+        RandomForestClassifier(random_state=42, n_estimators=100),
+        GradientBoostingClassifier(random_state=42, n_estimators=100),
     ]
 
     _, FIRST, SECOND = evaluate(models, BIG_DATA)
 
     rookie_first_team = list(FIRST.keys())[:5]
     rookie_second_team = list(SECOND.keys())[:5]
-
-    # print("FIRST ROOKIE TEAM")
-    # print(rookie_first_team)
-    # print("SECOND ROOKIE TEAM")
-    # print(rookie_second_team)
 
     return rookie_first_team, rookie_second_team
 
