@@ -5,8 +5,15 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
 from sklearn.neural_network import MLPClassifier
 import json
+import argparse
+from pathlib import Path
 
+parser = argparse.ArgumentParser()
+parser.add_argument('results_file', type=str)
+args = parser.parse_args()
+results_file = Path(args.results_file)
 
+# Function to generate JSON file with NBA teams
 def generate_all_nba_json(first_team, second_team, third_team, first_rookie_team, second_rookie_team, filename):
     data = {
         "first all-nba team": first_team,
@@ -20,7 +27,7 @@ def generate_all_nba_json(first_team, second_team, third_team, first_rookie_team
         json.dump(data, json_file, indent=2)
 
 
-
+# Function to remove duplicate players from different teams
 def remove_duplicate_players(first_team, second_team, third_team):
     all_players = {}
     for player, frequency in first_team.items():
@@ -39,6 +46,7 @@ def remove_duplicate_players(first_team, second_team, third_team):
 
     return filtered_first_team, filtered_second_team, filtered_third_team
 
+# Function to filter top players by year and percentage
 def filter_top_players_by_year(data, stats, percentage):
     top_players_per_year = []
     start_year = data['YEAR'].min()
@@ -55,7 +63,7 @@ def filter_top_players_by_year(data, stats, percentage):
     return top_players_all_years
 
 
-
+# Function to calculate correlation and filter features
 def corrlation_cal(data, features, year, value):
     data_00_22 = data[data['YEAR'] != year].copy()
     correlation_matrix = data_00_22[features + ['Result']].corr()
@@ -64,7 +72,7 @@ def corrlation_cal(data, features, year, value):
     significant_features = sorted_correlation[sorted_correlation >= value].index.tolist()
     return significant_features
 
-
+# Function to filter players by position
 def filter_G_position(data):
     return data[data['Position'].str.contains('G') | (data['Position'] == 'NONE')]
 
@@ -76,7 +84,7 @@ def filter_C_position(data):
 def filter_F_position(data):
     return data[data['Position'].str.contains('F') | (data['Position'] == 'NONE')]
 
-
+# Function to evaluate models and predict NBA teams
 def evaluate(models, BIG_DATA):
     total_player_count_100 = {}
     total_player_count_60 = {}
@@ -117,7 +125,7 @@ def evaluate(models, BIG_DATA):
 
     return total_player_count_100, total_player_count_60, total_player_count_20
 
-
+# Function to create data collections for modeling
 def make_collection(data, year, target, features):
     train_data = data[data['YEAR'] != year].copy()
     test_data = data[data['YEAR'] == year].copy()
@@ -135,7 +143,7 @@ def make_collection(data, year, target, features):
 
     return X_train, y_train, X_test, y_test, player_data
 
-
+# Function to predict All-NBA teams
 def All_NBA_TEAM(stats_players, result_data, year):
 
     mask = stats_players['YEAR'] == stats_players.groupby('PLAYER_NAME')['YEAR'].transform('min')
@@ -196,7 +204,7 @@ def All_NBA_TEAM(stats_players, result_data, year):
 
     return first_ALLteam, second_ALLteam, third_ALLteam
 
-
+# Function to predict All-NBA Rookie teams
 def All_NBA_ROOKIE_TEAM(stats_players, result_data, year):
     stats_players.sort_values(by=['PLAYER_NAME', 'YEAR'], inplace=True)
     mask = stats_players['YEAR'] == stats_players.groupby('PLAYER_NAME')['YEAR'].transform('min')
@@ -235,8 +243,9 @@ def All_NBA_ROOKIE_TEAM(stats_players, result_data, year):
 
     return rookie_first_team, rookie_second_team
 
+# Read data
 stats_players = pd.read_csv('ALL_position.csv')
-result_data = pd.read_csv('result_ALL.csv')
+result_data = pd.read_csv('result_ALL_NBA_Team.csv')
 result_data_rookie = pd.read_csv('result_rookie.csv')
 
 numeric_columns = ['AGE', 'GP', 'W', 'L', 'W_PCT', 'MIN', 'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM',
@@ -244,14 +253,22 @@ numeric_columns = ['AGE', 'GP', 'W', 'L', 'W_PCT', 'MIN', 'FGM', 'FGA', 'FG_PCT'
                    'PLUS_MINUS', 'NBA_FANTASY_PTS', 'DD2', 'TD3', 'WNBA_FANTASY_PTS']
 percentage_columns = ['FG_PCT', 'FG3_PCT', 'FT_PCT']
 
+# Filter players who played at least 65 games
 merged_data = stats_players[stats_players['GP'] >= 65]
+# Scale numeric columns using StandardScaler
 scaler = StandardScaler()
 stats_players[numeric_columns] = scaler.fit_transform(stats_players[numeric_columns])
 
+# Scale percentage columns using MinMaxScaler
 scaler = MinMaxScaler()
 stats_players[percentage_columns] = scaler.fit_transform(stats_players[percentage_columns])
 
+# Predict All-NBA teams
 first_ALL_NBA, second_ALL_NBA, third_ALL_NBA = All_NBA_TEAM(stats_players, result_data, 2023)
+# Predict All-NBA Rookie teams
 rookie_first_NBA_team, rookie_second_NBA_team = All_NBA_ROOKIE_TEAM(stats_players, result_data_rookie, 2023)
 
-generate_all_nba_json(first_ALL_NBA, second_ALL_NBA, third_ALL_NBA, rookie_first_NBA_team, rookie_second_NBA_team, 'nba_teams.json')
+# Generate JSON file with predicted teams
+#generate_all_nba_json(first_ALL_NBA, second_ALL_NBA, third_ALL_NBA, rookie_first_NBA_team, rookie_second_NBA_team, 'nba_teams.json')
+generate_all_nba_json(first_ALL_NBA, second_ALL_NBA, third_ALL_NBA, rookie_first_NBA_team, rookie_second_NBA_team, results_file)
+
